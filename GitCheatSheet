@@ -1,0 +1,69 @@
+# ===== GLOBAL CONFIG =====
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+git config --list
+
+# ===== START A REPO =====
+git init
+git clone https://github.com/username/repository.git
+
+# ===== CHECK STATUS =====
+git status
+git log
+git log --oneline --graph --all
+
+# ===== ADD & COMMIT =====
+git add .
+git add file.txt
+git commit -m "Initial commit"
+
+# ===== BRANCHING =====
+git branch
+git branch new-branch
+git checkout new-branch
+git checkout -b new-branch
+git merge new-branch
+git branch -d new-branch
+
+# ===== REMOTE / GITHUB =====
+git remote -v
+git remote add origin https://github.com/username/repository.git
+git push -u origin main
+git pull origin main
+git fetch
+
+# ===== UPDATE & SYNC =====
+git pull
+git push
+
+# ===== UNDO CHANGES =====
+git restore file.txt
+git restore --staged file.txt
+git reset --soft HEAD~1
+git reset --hard HEAD~1
+
+# ===== STASH =====
+git stash
+git stash list
+git stash pop
+git stash clear
+
+# ===== TAGS =====
+git tag
+git tag v1.0
+git push origin v1.0
+
+# ===== DELETE FILE =====
+git rm file.txt
+git commit -m "Remove file"
+
+# ===== RENAME FILE =====
+git mv old.txt new.txt
+git commit -m "Rename file"
+
+# ===== CLEAN =====
+git clean -fd
+
+# ===== HELP =====
+git help
+git help commit
